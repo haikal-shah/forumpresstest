@@ -47,7 +47,7 @@ h6 {
   font-family: var(--font-secondary);
 }
 
-a, button, p{
+span, a, button, p{
   font-family: var(--font-secondary);
 }
 
@@ -58,9 +58,7 @@ button:hover{
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-.container{
-  padding:40px 0;
-}
+
 /*--------------------------------------------------------------
 # Scroll top button
 --------------------------------------------------------------*/
@@ -455,17 +453,31 @@ button:hover{
 
 
 .nav-spacer{
-  height: 68px;
+  height: 90px;
 }
 
+.book-image-container{
+  padding:20px;
+}
+
+.book-description-container{
+  padding:20px;
+}
+
+.book-image img{
+  max-height: 520px;
+}
 
 @media (max-width: 769px) {
   .book-image img{
     max-height: 300px;
   }
+}
 
+
+@media (max-width: 575px) {
   .nav-spacer{
-    height: 48px;
+    height: 70px;
   }
 }
 
@@ -474,10 +486,42 @@ button:hover{
   border: 2px solid black;
 }
 
+main{
+  min-height: 80vh;
+  padding: 5%;
+}
 
-@media (max-width: 380px) {
-  .row{
-    width: 99%;
+.whitespace{
+  padding: 8%;
+}
+
+@media (max-width: 991px) {
+  .whitespace{
+    padding: 10% 0;
   }
 }
 
+
+#product h2{
+  padding-bottom: 10px;
+}
+
+@media (max-width: 767px){
+  #product h2{
+    text-align: center;
+  }
+}
+
+
+.item-grind-image img{
+  max-height: 300px;
+  margin: 0;
+}
+
+.item-grind{
+  padding: 0;
+}
+
+#product h3{
+  margin-bottom: 0px;
+}
